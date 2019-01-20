@@ -1,0 +1,31 @@
+<div class="sidebar-wrapper open" [@slide]="state" >
+  <div class="header">
+    <div class="entry-area">
+      <div class="icon-area" (click)="toggleOpen()">
+        <fa-icon [icon]="icons.faBars"></fa-icon>
+      </div>
+      <div class="text-area" *ngIf="textShown">
+        SOP-NEXT
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="entry-area">
+      <div class="icon-area">
+        <fa-icon [icon]="icons.faComment"></fa-icon>
+      </div>
+      <div class="text-area" *ngIf="textShown">
+        Kommentiere den Beitrag
+      </div>
+    </div>
+
+
+    <div class="entry-area">
+      <div class="icon-area">
+        <fa-icon [icon]="icons.faUserMinus"></fa-icon>
+      </div>
+      <div class="text-area" *ngIf="textShown">
+        Entferne Benutzer
+      </div>
+    </div>
+  </div>
